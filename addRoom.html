@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加房间</title>
+</head>
+
+
+<style>
+body{ font-family: "微软雅黑"; }
+ 
+.ssk{
+  
+    height: 45px;
+   
+    line-height:45px;
+	font-size:16px;
+    padding: 0px;
+    margin-top: 10px;
+    background: #fff;
+    
+    border: 1px solid #999;
+    outline: none;
+	text-indent:10px;
+    font-family: 'Microsoft YaHei';
+	  width: 370px;
+}
+.an{     width: 220px;
+    background: #e52424;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    height: 47px;
+    padding: 0px;
+	outline:none;
+    border: 0px none;
+    margin-top: 20px;
+    cursor: pointer; }
+    .f1 div{ width: 150px; height: 47px; float: left; line-height: 47px; margin-top: 10px; text-align: right; padding-right: 10px;color: #333; font-size: 18px; font-weight: bold; }
+
+.wby{ width:700px; height:150px; outline:none; }
+
+</style>
+
+
+
+
+<body>
+
+<div style="  margin:auto; margin-top:10px; background: #fff; border-radius: 5px; box-shadow: 0px 0px 15px #ccc; padding: 30px; width:600px;">
+	<div style="font-size: 25px; text-align: center; color: #0566c7; margin-bottom: 20px;">添加房间</div>
+<form class="f1" action="addRoom.php" method="post">
+	
+
+
+<div>房间名称</div><input name="fname" id="wz" required="required" class="ssk" placeholder="请输入房间名称"   type="text" /> <br />
+
+
+<div >房间类型</div><input name="ftype" required="required"   id="wz" class="ssk" placeholder="请输入房间类型"  type="text" /><br />
+<div >房间价格</div><input name="fprice" required="required"   id="wz" class="ssk" placeholder="请输入房间每晚价格"  type="text" /><br />
+<div >房间图片地址</div><input name="fimg" required="required"   id="wz" class="ssk" placeholder="请输入图片地址 如images/a1.jpg"  type="text" /><br />
+
+<a href="guanli_f.php" style=" display: block; float: left; margin-top: 40px; color: #333;">返回</a><input class="an" type="submit" value="添 加" id="gen" >
+
+</form>
+
+<div style="clear: both;">
+	
+</div>
+
+</div>
+
+
+
+</body>
+</html>

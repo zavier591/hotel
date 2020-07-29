@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户注册</title>
+</head>
+
+
+<style>
+body{ font-family: "微软雅黑"; }
+	.box{margin:0 auto; 
+		margin-top:200px;
+		background-color: #E19596;
+		
+		 
+		border-radius: 5px; 
+		box-shadow: 0px 0px 15px #ccc; 
+		padding: 30px; 
+		width:600px;
+		
+	}
+
+.ssk{
+  
+    height: 45px;
+   
+    line-height:45px;
+	font-size:16px;
+    padding: 0px;
+    margin-top: 10px;
+    background: #fff;
+    
+    border: 1px solid #999;
+    outline: none;
+	text-indent:10px;
+    font-family: 'Microsoft YaHei';
+	  width: 370px;
+}
+.an{     width: 220px;
+    background: #e52424;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    height: 47px;
+    padding: 0px;
+	outline:none;
+    border: 0px none;
+    margin-top: 20px;
+    cursor: pointer; }
+    .f1 div{ width: 150px; height: 47px; float: left; line-height: 47px; margin-top: 10px; text-align: right; padding-right: 10px;color: #333; font-size: 18px; font-weight: bold; }
+
+.wby{ width:700px; height:150px; outline:none; }
+
+</style>
+
+
+
+
+<body>
+
+<div class="box">
+	<div style="font-size: 25px; text-align: center; color: #0566c7; margin-bottom: 20px;">用 户 注 册</div>
+<form class="f1" action="register.php" method="post">
+	
+
+
+<div>用户名</div><input name="name" id="wz" required="required" class="ssk" placeholder="请输入"   type="text" /> <br />
+
+
+<div>手机</div><input name="phone" required="required"  pattern="[0-9]{11}" id="wz" class="ssk" placeholder="请输入手机号"  type="text" /><br />
+<div>密码</div><input name="password" required="required"  pattern="[a-zA-Z0-9]{6,15}" id="wz" class="ssk" placeholder="请输入注册密码(大于6位)"  type="text" /><br />
+
+
+<a href="index.php" style=" display: block; float: left; margin-top: 40px; color: #333;">返回首页</a><input class="an" type="submit" value="注 册" id="gen" >
+
+</form>
+
+<div style="clear: both;">
+	
+</div>
+
+</div>
+
+
+
+</body>
+</html>

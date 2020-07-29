@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>关于ww酒店</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <script charset="utf-8" async src="js/i9.js"></script></head>
+  <style>
+
+/* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+.board{
+    width: 75%;
+margin: 60px auto;
+
+background: #fff;
+/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+}
+.board .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 40px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+.board > div.board-inner{
+    background: #fafafa url(images/geometry2.png);
+    background-size: 30%;
+}
+
+p.narrow{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.liner{
+    height: 2px;
+    background: #ddd;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    /* background-color: #ffffff; */
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+span.round-tabs.one{
+    color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+}
+
+li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: rgb(34, 194, 34);
+}
+
+span.round-tabs.two{
+    color: #febe29;border: 2px solid #febe29;
+}
+
+li.active span.round-tabs.two{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #febe29;
+}
+
+span.round-tabs.three{
+    color: #3e5e9a;border: 2px solid #3e5e9a;
+}
+
+li.active span.round-tabs.three{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #3e5e9a;
+}
+
+span.round-tabs.four{
+    color: #f1685e;border: 2px solid #f1685e;
+}
+
+li.active span.round-tabs.four{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #f1685e;
+}
+
+span.round-tabs.five{
+    color: #999;border: 2px solid #999;
+}
+
+li.active span.round-tabs.five{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #999;
+}
+
+.nav-tabs > li.active > a span.round-tabs{
+    background: #fafafa;
+}
+.nav-tabs > li {
+    width: 20%;
+}
+/*li.active:before {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 1;
+    transition:0.2s ease-in-out;
+}*/
+li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd;
+    transition:0.1s ease-in-out;
+    
+}
+li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ddd;
+    
+}
+.nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 20px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+.tab-content{
+}
+.tab-pane{
+   position: relative;
+padding-top: 50px;
+}
+.tab-content .head{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.btn-outline-rounded{
+    padding: 10px 40px;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.btn.green{
+    background-color:#5cb85c;
+    /*border: 2px solid #5cb85c;*/
+    color: #ffffff;
+}
+.nav-tabs>li>a { background: none; }
+	  .imghua{
+		 width: 60%;
+		  margin: 10px auto;
+	  }
+
+  </style>
+  <body>
+<!--页头开始-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 logo">
+                    <img src="" alt="">
+                </div>
+                <div class="col-md-6 pull-right">
+                    <ul class="nav">
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--页头结束-->
+<!--showcase star-->
+    <div class="showcase">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="picture/huayanghu01.jpg" class="img-responsive" alt="...">
+            </div>
+            <div class="item">
+              <img src="picture/huayanghu03.jpg" class="img-responsive" alt="...">
+            </div>
+			  
+			 
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+    </div>
+<!--showcase end-->
+<!--main star-->
+    
+
+    
+    <section style="background:#efefe9;">
+    	    
+        <div class="container">
+            <div class="row">
+            		
+                	<div style=" text-align: center; font-size: 20px; margin-top: 50px;" ><a style="padding: 10px; border-radius: 5px; color: #fff; background: #06f;" href="index.php">我要预订  </a></div>
+                <div style="margin-top: 20px;" class="board">
+                
+                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a href="#home" data-toggle="tab" title="welcome">
+                      <span class="round-tabs one">
+                              简介
+                      </span> 
+                  </a></li>
+
+                  <li><a href="#profile" data-toggle="tab" title="profile">
+                     <span class="round-tabs two">
+                         风景
+                     </span> 
+           </a>
+                 </li>
+                 <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
+                     <span class="round-tabs three">
+                          美食
+                     </span> </a>
+                     </li>
+
+                     <li><a href="#settings" data-toggle="tab" title="blah blah">
+                         <span class="round-tabs four">
+                             游玩
+                         </span> 
+                     </a></li>
+
+                     
+                     
+                     </ul></div>
+
+                     <div class="tab-content">
+                      <div class="tab-pane fade in active" id="home">
+
+                          <h3 class="head text-center">ww酒店</h3>
+                          <p class="narrow text-center">
+                            ww酒店位于素有“中国曲艺之乡”的麻涌镇，依托自明代兴建的西园夜市之底蕴与繁华，背靠华阳湖生态湿地公园，北临中山大学新华学院。
+　　酒店将轻时尚的现代设计理念创新性地融入复古工业设计中，以深厚的东方文化底蕴为依托，实现酒店在设计、艺术、工艺上的完美融合与呈现。
+　　酒店拥有客房百余间，配备休闲室、独立书吧，以营造舒适、放松、温馨、安全的入住环境为理念，每间房配备名家精心设计的全套家私，以星级酒店的服务标准为客户提供细心、周到、暖心的管家式服务。
+　　酒店秉承“细心于服务，专心于品质”的经营理念，以“服务至诚，宾客至上”的服务标准，力求成为麻涌受欢迎的精品酒店。
+                            <img src="images/s1.jpg" />
+						  </p></div>
+                          
+                       
+                      
+                      <div class="tab-pane fade" id="profile">
+                          <h3 class="head text-center">风景</h3>
+                          <p class="narrow text-center">
+                    华阳湖国家湿地公园位于广东省东莞市麻涌镇，占地面积3199.4亩，2015年被国家林业局评为“国家湿地公园”；被誉为东莞的“都市绿肺”，绿荫环绕，优美水湾连绵不断，犹如室外桃源，整个湿地公园集融休闲旅游、农耕体验、科普文化、城市生态功能于一体，具有浓郁的岭南水乡特色，公园以华阳湖为核心，与周边35公里的水上生态绿道构成水上交通网，建设有约22公里长的“水草鲜美、桃红柳绿”的水上绿道、10公里的骑行线路、5公里的环湖路径，公园内现有各类游乐项目；<br>
+					1、花海漂游项目：夏季6-8月的华阳湖，最令人期待的莫过于嵌入其中的500亩荷塘。游客乘坐古色古香的小艇游览跨越华阳、南洲、麻一、麻三4个村落的河道，可观赏亭亭玉立的荷花在夏日的骄阳里竞相盛开，争奇斗艳，迷人的水韵，醉人的荷香，形成了夏日里一道靓丽独特的风景。<br>
+					2、华阳湖夜航：通过声、光、电、现代高科技的激光、投影等结合方式将华阳湖及周边10余个景点“装扮”成为夜间实景舞台，夜间游客乘坐游船，一路欣赏梦幻的湖光月色，一路领略麻涌人文风情，可感受到岭南人日新月异、五彩斑斓的生活美景，领略一场梦幻的岭南水乡之旅。<br>
+					3、亲子游乐项目：游客可参与露营、徒步、团建、亲子拓展等户外活动，也可自行租赁公园区的特定自行车、电动车、电动脚踏船、碰碰船等游乐设施。<br>
+					4、动力伞飞翔项目：动力伞飞翔是一项动力滑翔伞运动项目，拥有世界上顶级的专业设备装置和国际专业级教练。 <br>  <img src="picture/huayanghu02.jpg" />
+</p></div>
+                          
+                         
+                         
+                          
+                      
+                      <div class="tab-pane fade" id="messages">
+                          <h3 class="head text-center">中大创客坊</h3>
+                          <p class="narrow text-center">
+中大创客坊位于与广州市黄埔区一江之隔的东莞市麻涌镇，毗邻华阳湖生态旅游区，背靠中山大学新华学院，是目前全国唯一与自然生态环境和高等学府相连的休闲旅游美食街，拥有绝佳地缘优势。 项目总面积8000多平米，共两层，一楼4000多平米，以餐饮、服装、鞋业、文体文具、数码通讯、音乐器材等为主；二楼4000多平米，以百货店、旅业、酒吧、网吧、健身房、培训室、书城等为主。项目按照“商业旅游”的现代理念规划设计，由东莞市古梅西园经营管理有限公司倾力打造，旨在打造成面向麻涌乃至东莞市最具本土传统特色的文化休闲旅游商业圈。
+                                <img src="picture/chuankefang.jpg" />
+                          </p>
+                          
+                          
+                      </div>
+                      <div class="tab-pane fade" id="settings">
+                          <h3 class="head text-center">周边娱乐</h3>
+                          <p class="narrow text-center">
+                             星河城商场：可以提供逛街购物、看电影等娱乐设施。<br>
+							  古梅体育馆：可以进行游泳、打篮球等户外活动。
+                                 <img src="images/s4.jpg" />
+                          </p>
+                          
+                         
+                      </div>
+                      
+<div class="clearfix"></div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+                   
+<!--main end-->
+<!--footer star-->
+    <div class="footer">
+        <div class="container">
+            <p>Copyright © 2019-12 All rights reserved.</p>                 
+        </div>
+    </div>
+<!--footer end-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+$('a[title]').tooltip();
+});
+
+    </script>
+  </body>
+</html>
